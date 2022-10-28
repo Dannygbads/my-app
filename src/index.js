@@ -36,13 +36,13 @@ function MainContent(){
 
                 <a className="link"  id="btn_zuri" href="https://training.zuri.team/">Zuri Team</a>
 
-                <a className="link"  title="Best Tutorial Books for Designing and coding" id="books"  href="http://books.zuri.team/">Zuri Books</a>
+                <a className="link"  title="Best Tutorial Books for Designing and coding" id="books"  href="http://books.zuri.team/">Up to Date books on designing and coding</a>
 
-                <a  className="link" id="book_python" href="https://books.zuri.team/python-for-beginners?">Python Books</a>
+                <a  className="link" id="book_python" href="https://books.zuri.team/python-for-beginners?">Learn the Basics of Coding</a>
 
-                <a  className="link" id="pitch" href="https://background.zuri.team/">Background Check for Coders</a>
+                <a  className="link" id="pitch" href="https://background.zuri.team/">Pre-Employment Screening of Coders</a>
 
-                <a  className="link" id="book_design" href="https://books.zuri.team/design-rules">Design Books</a>
+                <a  className="link" id="book_design" href="https://books.zuri.team/design-rules">Free Design HandGuides</a>
             </div>
            
         </section>
