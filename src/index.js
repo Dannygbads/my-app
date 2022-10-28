@@ -3,6 +3,7 @@ import ReactDOM from "react-dom"
 import Header from "./head"
 import "./style.css"
 import profileImage from "../src/image.jpg"
+import Ifg from "../src/I4G.png"
 
 
 function Footer(){
@@ -20,7 +21,7 @@ function Footer(){
             </div>
 
             <div id="ifg">
-                <img id="ingressive" src="public\I4G.png" alt="Ingressive for good"/>
+                <img id="ingressive" src={Ifg} alt="Ingressive for good"/>
             </div>
 
         </footer>
