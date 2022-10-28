@@ -1,12 +1,90 @@
-.nav{
+*{
+    padding: 0;
+    margin: 0.5rem;
+    font-family: 'Inter', sans-serif;
+
+}
+#root{
+    width: 100%;
+}
+body{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
-.nav-item{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
+header{
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 5em;
 }
+#icon{
+    position: absolute;
+    right: 300px;
+    top: -30px;
+    background-color: white;
+    width: fit-content;
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+
+}
+#icon:hover{
+    cursor: pointer;
+    background-color: rgb(231, 227, 227);
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#twitter{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#slack{
+    display: none;
+}
+section{
+    width: 100%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    font-weight: 500;
+
+}
+ section a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(234, 236, 240, 1);
+    width: 1152px;
+    height: 76px;
+    border-radius: 9px;
+ }
+ section a:hover{
+    background-color: rgba(204, 204, 204, 0.997);
+
+ }
+ #social-section{
+    display: flex;
+    justify-content: center;
+ }
+
+ footer{
+    border-top: 1px solid rgba(234, 236, 240, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ #hng-task{
+    color: rgb(191, 191, 191);
+ }
