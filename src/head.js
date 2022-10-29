@@ -23,7 +23,7 @@ function Header(){
                 </div>
                 
                 <h1 id="twitter">Dannygbads</h1>
-                <h2 id="slack">Daniel</h2>
+                <h2 id="slack">danny O.G</h2>
             </div>
             <div id="icon">
                 <div className="btn-container">
