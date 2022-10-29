@@ -32,17 +32,34 @@ function MainContent(){
     return(
         <section>
             <div className="links">
-                <a className="link"  id="twitter_link" href="#">Twitter Link</a>
+                {/* <a className="link"  id="twitter_link" href="#">Twitter Link
+
+                </a> */}
 
                 <a className="link"  id="btn_zuri" href="https://training.zuri.team/">Zuri Team</a>
 
-                <a className="link"  title="Best Tutorial Books for Designing and coding" id="books"  href="http://books.zuri.team/">Up to Date books on designing and coding</a>
+                <a className="link"  title="Best Tutorial Books for Designing and coding" id="books"  href="http://books.zuri.team/">
+                    Zuri Books
+                    <sub>Up to Date books on designing and coding</sub>
+                </a>
 
-                <a  className="link" id="book_python" href="https://books.zuri.team/python-for-beginners?">Learn the Basics of Coding</a>
+                <a  className="link" id="book_python" href="https://books.zuri.team/python-for-beginners?ref_id=<Daniel Gbadeyan>" >
+                    Python Books
 
-                <a  className="link" id="pitch" href="https://background.zuri.team/">Pre-Employment Screening of Coders</a>
+                    <sub>Best Books on the Basics of Coding</sub>
+                    
+                    </a>
 
-                <a  className="link" id="book_design" href="https://books.zuri.team/design-rules">Free Design HandGuides</a>
+                <a  className="link" id="pitch" href="https://background.zuri.team/">
+                    Background Check for Coders
+                    <sub>Pre-Employment Screening and investigation of Coders</sub>
+                    
+                </a>
+
+                <a  className="link" id="book_design" href="https://books.zuri.team/design-rules">
+                    Design Books
+                    <sub>Free Design HandGuides</sub>
+                    </a>
             </div>
            
         </section>
