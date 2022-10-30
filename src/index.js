@@ -40,22 +40,20 @@ function MainContent(){
 
                 <a id="books"   title="Best Tutorial Books for Designing and coding"  href="http://books.zuri.team/">
                     Zuri Books
-                    <sub>Up to Date books on designing and coding</sub>
+                    
                 </a>
 
-                <a  id="book_python" href="https://books.zuri.team/python-for-beginners?ref_id=<Daniel Gbadeyan>" >
+                <a  id="book_python" title="Best Books on the Basics of Coding" href="https://books.zuri.team/python-for-beginners?ref_id=<Daniel Gbadeyan>" >
                     Python Books
-                    <sub>Best Books on the Basics of Coding</sub>
                 </a>
 
-                <a  id="pitch" href="https://background.zuri.team/">
+                <a  id="pitch" title="Pre-Employment Screening and investigation of Coders" href="https://background.zuri.team/">
                      Background Check for Coders
-                    <sub>Pre-Employment Screening and investigation of Coders</sub>
+                    <sub></sub>
                 </a>
 
-                <a id="book_design" href="https://books.zuri.team/design-rules">
+                <a id="book_design" title="Free Design HandGuides" href="https://books.zuri.team/design-rules">
                     Design Books
-                    <sub>Free Design HandGuides</sub>
                 </a>
             </div>
            
@@ -67,6 +65,7 @@ function MainContent(){
 function SocialSection(){
     return(
         <section id="social-section">
+
             <div className="slack-icon">
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.8752 11.2498C20.9106 11.2498 21.75 10.4104 21.75 9.37496V9.37496C21.75 8.33952 20.9105 7.50012 19.8751 7.50012V7.50012C18.8395 7.50012 18 8.33959 18 9.37512V11.2498H19.8752ZM14.625 11.2498C15.6605 11.2498 16.5 10.4103 16.5 9.3748V4.12512C16.5 3.08959 15.6605 2.25012 14.625 2.25012V2.25012C13.5895 2.25012 12.75 3.08959 12.75 4.12512V9.3748C12.75 10.4103 13.5895 11.2498 14.625 11.2498V11.2498Z" fill="#2EB67D"/>
@@ -75,6 +74,7 @@ function SocialSection(){
                 <path d="M11.2498 4.12484C11.2498 3.08939 10.4104 2.25 9.37496 2.25V2.25C8.33952 2.25 7.50012 3.08947 7.50012 4.12492V4.12492C7.50012 5.16045 8.33959 6 9.37512 6L11.2498 6L11.2498 4.12484ZM11.2498 9.375C11.2498 8.33947 10.4103 7.5 9.3748 7.5L4.12512 7.5C3.08959 7.5 2.25012 8.33947 2.25012 9.375V9.375C2.25012 10.4105 3.08959 11.25 4.12512 11.25L9.3748 11.25C10.4103 11.25 11.2498 10.4105 11.2498 9.375V9.375Z" fill="#36C5F0"/>
                 </svg>
             </div>
+
             <div className="git-icon">
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_4627_392534)">
@@ -87,6 +87,7 @@ function SocialSection(){
                 </defs>
                 </svg>
             </div>
+            
         </section>
     )
 }
