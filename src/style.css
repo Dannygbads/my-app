@@ -117,6 +117,9 @@ header .header .profile .profile-overlay .camera-icon{
     font-weight: 700;
     font-size: 20px;
 }
+#slack{
+    visibility: hidden;
+}
 /* a{
     cursor: pointer;
 } */
