@@ -20,7 +20,9 @@ function Page(){
     
 }
     
-
+user={
+    yourSlackname:'danny O.G'
+}
 
 function MainContent(){
     return(
@@ -30,13 +32,13 @@ function MainContent(){
 
                 </a> */}
 
-                <a  id="btn_zuri" href="https://training.zuri.team/">Zuri Team</a>
+                <a  id="btn__zuri" href="https://training.zuri.team/">Zuri Team</a>
 
                 <a id="books"   title="Best Tutorial Books for Designing and coding"  href="http://books.zuri.team/">
                     Zuri Books
                 </a>
 
-                <a  id="book_python" title="Best Books on the Basics of Coding" href="https://books.zuri.team/python-for-beginners?ref_id={danny O.G}" >
+                <a  id="book__python" title="Best Books on the Basics of Coding" href="https://books.zuri.team/python-for-beginners?ref_id={user.yourSlackname}" >
                     Python Books
                 </a>
 
@@ -44,7 +46,7 @@ function MainContent(){
                      Background Check for Coders
                 </a>
 
-                <a id="book_design" title="Free Design HandGuides" href="https://books.zuri.team/design-rules">
+                <a id="book__design" title="Free Design HandGuides" href="https://books.zuri.team/design-rules">
                     Design Books
                 </a>
             </div>
