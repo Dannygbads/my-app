@@ -40,7 +40,6 @@ function MainContent(){
 
                 <a id="books"   title="Best Tutorial Books for Designing and coding"  href="http://books.zuri.team/">
                     Zuri Books
-                    
                 </a>
 
                 <a  id="book_python" title="Best Books on the Basics of Coding" href="https://books.zuri.team/python-for-beginners?ref_id=<Daniel Gbadeyan>" >
@@ -49,7 +48,6 @@ function MainContent(){
 
                 <a  id="pitch" title="Pre-Employment Screening and investigation of Coders" href="https://background.zuri.team/">
                      Background Check for Coders
-                    <sub></sub>
                 </a>
 
                 <a id="book_design" title="Free Design HandGuides" href="https://books.zuri.team/design-rules">
@@ -87,7 +85,7 @@ function SocialSection(){
                 </defs>
                 </svg>
             </div>
-            
+
         </section>
     )
 }
