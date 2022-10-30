@@ -26,6 +26,7 @@ function Header(){
                 
                 <h1 id="twitter">Dannygbads</h1>
                 {/* <p id="slack">danny O.G</p> */}
+                
             </div>
 
             <div id="icon">

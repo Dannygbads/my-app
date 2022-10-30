@@ -125,8 +125,10 @@ header .header .profile .profile-overlay .camera-icon{
     font-weight: 700;
     font-size: 20px;
 }
-
-section{
+/* a{
+    cursor: pointer;
+} */
+#link-section{
     width: 100%;
     padding: 0;
     margin: 0;
@@ -143,7 +145,7 @@ section{
     font-weight: 500;
 
 }
- section a{
+ #link-section a{
     display: flex;
     gap: 0.3em;
     flex-direction: column;
@@ -157,13 +159,20 @@ section{
     height: 76px;
     border-radius: 9px;
  }
- section a:hover{
+ #link-section a:hover{
     background-color: rgba(204, 204, 204, 0.997);
 
  }
  #social-section{
     display: flex;
     justify-content: center;
+    
+ }
+ #social-section a svg{
+    cursor: pointer;
+ }
+ #social-section .git-icon{
+    cursor: pointer;
  }
 
  footer{
@@ -210,7 +219,7 @@ section{
         display: none;
 
     }
-    section a{
+    #link-section a{
         width: 98%;
     }
     footer{
