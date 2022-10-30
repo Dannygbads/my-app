@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import Header from "./head"
 import "./style.css"
 import profileImage from "../src/image.jpg"
 import Ifg from "../src/I4G.png"
+
 
 
 
@@ -20,11 +21,11 @@ function Page(){
     
 }
     
-user={
-    yourSlackname:'danny O.G'
-}
 
 function MainContent(){
+    const [YourSlackName, setYourSlackName] = useState('dannyO.G')
+
+    
     return(
         <section id="link-section">
             <div className="links">
@@ -38,7 +39,7 @@ function MainContent(){
                     Zuri Books
                 </a>
 
-                <a  id="book__python" title="Best Books on the Basics of Coding" href="https://books.zuri.team/python-for-beginners?ref_id={user.yourSlackname}" >
+                <a  id="book__python" title="Best Books on the Basics of Coding" href={"https://books.zuri.team/python-for-beginners?ref_id=" + YourSlackName}>
                     Python Books
                 </a>
 
