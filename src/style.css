@@ -29,29 +29,34 @@ header .header .profile #profile_img{
     height: 10em;
     border-radius: 50%;
     
+    
 }
 header .header .profile .profile-overlay{
-    background-image: url("../src/image.jpg");
-    background-size: 10em 10em;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
-    position: relative;
+    /* background-image: url("../src/image.jpg"); */
+    /* background-size: 10em 10em; */
+    /* background-repeat: no-repeat; */
+    /* border-radius: 50%; */
+    /* width: 10em; */
+    /* height: 10em; */
+    /* position: relative; */
   
 
 
 }
 header .header .profile:hover .profile-overlay {
+    
     cursor: pointer;
-    background-color: #474747;
-    background-blend-mode: overlay;
+    /* background-color: #474747;
+    background-blend-mode: overlay; */
+    color: rgb(93, 93, 93);
+    mix-blend-mode: overlay;
 
 
 }
 header .header .profile:hover .profile-overlay .camera-icon{
     display: block;
     position: absolute;
+   
     left: 40%;
     bottom: 20%;
 }
