@@ -23,7 +23,7 @@ function Header(){
                 </div>
                 
                 <h1 id="twitter">Dannygbads</h1>
-                <p id="slack">danny O.G</p> 
+                <p id="slack">dannyO.G</p> 
                 
             </div>
 
