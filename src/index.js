@@ -29,9 +29,9 @@ function MainContent(){
     return(
         <section id="link-section">
             <div className="links">
-                {/* <a  id="twitter_link" href="#">Twitter Link
+                 <a  id="twitter_link" href="https://twitter.com/Danielgbads">Twitter Link
 
-                </a> */}
+                </a> 
 
                 <a  id="btn__zuri" href="https://training.zuri.team/">Zuri Team</a>
 
