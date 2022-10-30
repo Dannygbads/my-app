@@ -23,7 +23,7 @@ function Page(){
     
 
 function MainContent(){
-    const [YourSlackName, setYourSlackName] = useState('dannyO.G')
+    const [yourSlackName, setYourSlackName] = useState('dannyO.G')
 
     
     return(
