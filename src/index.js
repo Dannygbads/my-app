@@ -39,7 +39,7 @@ function MainContent(){
                     Zuri Books
                 </a>
 
-                <a  id="book__python" title="Best Books on the Basics of Coding" href={"https://books.zuri.team/python-for-beginners?ref_id=" + YourSlackName}>
+                <a  id="book__python" title="Best Books on the Basics of Coding" href={"https://books.zuri.team/python-for-beginners?ref_id=" + yourSlackName}>
                     Python Books
                 </a>
 
