@@ -99,7 +99,9 @@ function ContactForm(props) {
         }           
 
     }
- 
+
+    
+    let name = formValues.lastName+" " +formValues.firstName 
     return(
         
         <div className="body">
@@ -192,7 +194,7 @@ function ContactForm(props) {
                          name="checkBox"
                           type={"checkbox"} />
                         <label>
-                            You agree to providing your data to (name) who may contact you
+                            You agree to providing your data to {name} who may contact you
                         </label>
 
                 </div>
