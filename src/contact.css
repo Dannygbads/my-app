@@ -183,11 +183,9 @@ textarea:focus{
 .checkfield input{
     width: 20px;
     height: 20px;
-    background-color: white;
     outline: 2px solid #1570EF;
     box-sizing: content-box;
     border-radius: 10px;
-
     accent-color: rgb(255, 255, 255);
 }
 .checkfield input:checked{
