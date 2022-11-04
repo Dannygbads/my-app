@@ -195,6 +195,10 @@ textarea:focus{
     border: 1px solid #1570EF; */
 
 }
+input[type=checkbox]
+{
+  -webkit-appearance:checkbox;
+}
 .checkfield input:focus{
     border-radius: 10px;
     /* border: 1px solid #84CAFF;
