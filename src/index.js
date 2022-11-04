@@ -67,7 +67,7 @@ function MainContent(){
                         Design Books
                     </a>
     
-                    <a id="contact" href="/contact" >Contact Me</a>
+                    <a id="contact" title="fill out a contact form where you can contact us" href="/contact" >Contact Me</a>
                 </div>
                
             </section>
