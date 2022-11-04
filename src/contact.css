@@ -183,22 +183,24 @@ textarea:focus{
 .checkfield input{
     width: 20px;
     height: 20px;
-    border-radius: 10px;
     background-color: white;
+    outline: 2px solid #1570EF;
+    box-sizing: content-box;
+    border-radius: 10px;
+
     accent-color: rgb(255, 255, 255);
 }
 .checkfield input:checked{
     width: 20px;
     height: 20px;
-    border-radius: 10px;
-    border: 1px solid #1570EF;
-    outline:1px solid #1570EF ;
+    /* border-radius: 10px;
+    border: 1px solid #1570EF; */
 
 }
 .checkfield input:focus{
     border-radius: 10px;
-    border: 1px solid #84CAFF;
-box-shadow: 0px 0px 0px 4px #D1E9FF;
+    /* border: 1px solid #84CAFF;
+box-shadow: 0px 0px 0px 4px #D1E9FF; */
 }
 
 .checkfield label{
@@ -272,16 +274,28 @@ button:disabled{
     
     }
     .checkfield input{
-        width: 26px;
-        height: 26px;
-      
+        width: fit-content;
+        height: fit-content;
+        background-color: white;
+        outline:none;
+        box-sizing: content-box;
+        border-radius: 10px;
+    
+        accent-color: rgb(255, 255, 255);
     }
     .checkfield input:checked{
-        width: 26px;
-        height: 26px;
+        width: fit-content;
+        height: fit-content;
         border-radius: 10px;
-        border: 1px solid #1570EF;
+        outline: 2px solid #1570EF;
+
+        /* border: 1px solid rgba(21, 112, 239, 1);
+        outline:none; */
     
     }
-    
+    .checkfield input:focus{
+        /* border-radius: 10px;
+        border: none;
+    box-shadow: 0px 0px 0px 4px #D1E9FF; */
+    }
 }
