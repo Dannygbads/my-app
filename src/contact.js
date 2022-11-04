@@ -2,7 +2,14 @@ import React, { useState , useEffect } from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import "./contact.css"
-function ContactForm() {
+function ContactForm(props) {
+  
+    const [firstInputStyle, setFirstInputStyle] =useState("")
+    const [lastInputStyle, setLastInputStyle] =useState("")
+    const [mailInputStyle, setMailInputStyle] =useState("")
+    const [messageInputStyle, setMessageInputStyle] =useState("")
+    const [inputDefault, setInputDefault]=useState("inputDefault")
+
     const intialValues = {
         firstName:"",
         lastName:"",
@@ -10,6 +17,9 @@ function ContactForm() {
         message:"",
 
     };
+    
+
+    
     const [formValues, setFormValues] = useState(intialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -18,7 +28,6 @@ function ContactForm() {
         console.log(e.target)
         const {name,value} = e.target
         setFormValues({...formValues,[name]: value})
-        console.log(formValues)
     }
 
     const handleSubmit = (e) =>{
@@ -27,30 +36,70 @@ function ContactForm() {
         setIsSubmit(true)
     }
 
+  
     useEffect(() =>{
-        console.log(formErrors)
         if(Object.keys(formErrors).length === 0 && isSubmit){
-            console.log(formValues)
         }
     }, [formErrors])
+
+    
+ 
 
     const validate = (values)=> {
         const errors={}
        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
        if (!values.firstName){
         errors.firstName= "First Name is required"
+        setFirstInputStyle("firstinputError")
+       }else{
+        setFirstInputStyle("")
        }
+
        if (!values.lastName){
         errors.lastName= "Last Name is required"
+        setLastInputStyle("lastinputError")
+       }else{
+        setLastInputStyle("")
        }
+
        if (!values.email){
         errors.email= "Email is required"
+        setMailInputStyle("mailinputError")
+
        }else if(!regex.test(values.email)){
             errors.email="This is not a valid email format!"
+       }else{
+        setMailInputStyle("")
+
        }
+
+
+       if (!values.message){
+        errors.message= "Please enter a message"
+        setMessageInputStyle("messageinputError")
+       }else{
+        setMessageInputStyle("")
+
+       }
+
+
        return errors;
     }
+    const[btn ,setBtn]= useState(true)
 
+    const ConfirmCheck = (e) => {
+        const checked = e.target.checked;
+        
+        if (!checked) {
+            setBtn(true)
+
+        } else {
+            setBtn(false)
+
+        }           
+
+    }
+ 
     return(
         
         <div className="body">
@@ -65,6 +114,9 @@ function ContactForm() {
                             <label >  First name</label>
                             <input
                             id="first_name" 
+                            count={"one"}
+                            className={firstInputStyle}  
+
                             name="firstName" 
                             type={"text"} 
                             placeholder="Enter your first name"
@@ -80,6 +132,8 @@ function ContactForm() {
                             </label>
                             <input 
                             id="last_name" 
+                            className={lastInputStyle}
+
                             name="lastName" 
                             type={"text"} 
                             placeholder="Enter your last name"
@@ -99,6 +153,7 @@ function ContactForm() {
                         </label>
                         <input 
                         id="email" 
+                        className={mailInputStyle}
                         name="email" 
                         placeholder="yourname@email.com" 
                         type={"email"} 
@@ -116,7 +171,8 @@ function ContactForm() {
                         Message
                     </label>
                     <textarea 
-                    id="message" 
+                    id="message"
+                    className={messageInputStyle} 
                     name="message" 
                     placeholder="send me a message and I'll reply you as soon a s possible" 
                     value={formValues.message}
@@ -124,17 +180,25 @@ function ContactForm() {
 
                     />
                 </div>
+                <span>{formErrors.message}</span>
+
                 
-                    <div className="field">
+                <div className="checkfield">
                     
-                        <input name="checkBox" type={"checkbox"} />
+                        <input   
+                         onClick={(e) => {
+                                ConfirmCheck(e);
+                            }}
+                         name="checkBox"
+                          type={"checkbox"} />
                         <label>
                             You agree to providing your data to (name) who may contact you
                         </label>
-                    </div>
+
+                </div>
                     
 
-                    <button id="btn__submit">Send message</button>
+                    <button disabled={btn} id="btn__submit">Send message</button>
                 
                 </form>
             </div>

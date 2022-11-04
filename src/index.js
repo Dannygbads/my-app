@@ -21,10 +21,12 @@ function Page(){
                     <Route path="/" element={
                     <div>
                         <Header/>
-                        <MainContent/>
+                        <MainContent
+                            
+                        />
                         <SocialSection/>
                     </div>}/>
-                    <Route path="contact" element={<ContactForm/>}/>
+                    <Route path="contact" element={<ContactForm InputStyle/>}/>
                 </Routes>           
             </BrowserRouter>
             <Footer/>
