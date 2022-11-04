@@ -152,21 +152,23 @@ textarea:focus{
     flex-direction: row;
     align-items: center;
     justify-content: left;
+    align-items: flex-start;
 
 }
 .checkfield input{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border-radius: 10px;
     background-color: white;
     accent-color: rgb(255, 255, 255);
 }
-input[type="checkbox" i]:checked {
-border-color: blue;
-outline: 1px solid #84CAFF;
+.checkfield input:checked{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #1570EF;
+    outline:1px solid #1570EF ;
 
-background-image: url("../public/Icon.png");
-background-repeat: no-repeat;
 }
 
 .checkfield label{
@@ -193,4 +195,63 @@ button{
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
 
+}
+button:hover{
+    background: #175CD3;
+}
+button:focus{
+    background: #1570EF; 
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
+button:disabled{
+    cursor:not-allowed;
+    background: #B2DDFF;
+}
+@media screen and (max-width: 750px) {
+    .body .form form .row{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "top"
+        "bottom"
+        ;
+        justify-content: left;
+        margin: 0;
+    }
+    p{
+        margin-top: 16px;
+        margin-bottom: 48px;
+    }
+    #first_name , #last_name{
+        width: 100%;
+        height: 44px;
+        padding-left: 9px;
+    
+    }
+    #email{
+        width: 100%;
+
+    }
+    textarea{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+
+    
+    }
+    .checkfield input{
+        width: 26px;
+        height: 26px;
+      
+    }
+    .checkfield input:checked{
+        width: 26px;
+        height: 26px;
+        border-radius: 10px;
+        border: 1px solid #1570EF;
+    
+    }
+    
 }

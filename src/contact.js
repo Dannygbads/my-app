@@ -174,7 +174,7 @@ function ContactForm(props) {
                     id="message"
                     className={messageInputStyle} 
                     name="message" 
-                    placeholder="send me a message and I'll reply you as soon a s possible" 
+                    placeholder="send me a message and I'll reply you as soon as possible ..." 
                     value={formValues.message}
                     onChange={handleChange}
 

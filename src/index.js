@@ -26,7 +26,7 @@ function Page(){
                         />
                         <SocialSection/>
                     </div>}/>
-                    <Route path="contact" element={<ContactForm InputStyle/>}/>
+                    <Route path="/contact" element={<ContactForm InputStyle/>}/>
                 </Routes>           
             </BrowserRouter>
             <Footer/>
