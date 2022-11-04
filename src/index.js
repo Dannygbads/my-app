@@ -1,10 +1,14 @@
 import React, { useState } from "react"
+import { BrowserRouter, Routes , Route ,Outlet} from "react-router-dom";
+
 import ReactDOM from "react-dom"
 import Header from "./head"
 import "./style.css"
 import profileImage from "../src/image.jpg"
 import Ifg from "../src/I4G.png"
-
+import ContactForm from "./contact"
+import Test from "./test"
+import {Link} from "react-router-dom"
 
 
 
@@ -12,10 +16,19 @@ function Page(){
     return(
         
         <div>
-            <Header/>
-            <MainContent/>
-            <SocialSection/>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={
+                    <div>
+                        <Header/>
+                        <MainContent/>
+                        <SocialSection/>
+                    </div>}/>
+                    <Route path="contact" element={<ContactForm/>}/>
+                </Routes>           
+            </BrowserRouter>
             <Footer/>
+            
         </div>
     )
     
@@ -27,32 +40,37 @@ function MainContent(){
 
     
     return(
-        <section id="link-section">
-            <div className="links">
-                 <a  id="twitter_link" href="https://twitter.com/Danielgbads">Twitter Link
-
-                </a> 
-
-                <a  id="btn__zuri" href="https://training.zuri.team/">Zuri Team</a>
-
-                <a id="books"   title="Best Tutorial Books for Designing and coding"  href="http://books.zuri.team/">
-                    Zuri Books
-                </a>
-
-                <a  id="book__python" title="Best Books on the Basics of Coding" href={"https://books.zuri.team/python-for-beginners?ref_id=" + yourSlackName}>
-                    Python Books
-                </a>
-
-                <a  id="pitch" title="Pre-Employment Screening and investigation of Coders" href="https://background.zuri.team/">
-                     Background Check for Coders
-                </a>
-
-                <a id="book__design" title="Free Design HandGuides" href="https://books.zuri.team/design-rules">
-                    Design Books
-                </a>
-            </div>
-           
-        </section>
+      
+                <section id="link-section">
+                <div className="links">
+                     <a  id="twitter_link" href="https://twitter.com/Danielgbads">Twitter Link
+    
+                    </a> 
+    
+                    <a  id="btn__zuri" href="https://training.zuri.team/">Zuri Team</a>
+    
+                    <a id="books"   title="Best Tutorial Books for Designing and coding"  href="http://books.zuri.team/">
+                        Zuri Books
+                    </a>
+    
+                    <a  id="book__python" title="Best Books on the Basics of Coding" href={"https://books.zuri.team/python-for-beginners?ref_id=" + yourSlackName}>
+                        Python Books
+                    </a>
+    
+                    <a  id="pitch" title="Pre-Employment Screening and investigation of Coders" href="https://background.zuri.team/">
+                         Background Check for Coders
+                    </a>
+    
+                    <a id="book__design" title="Free Design HandGuides" href="https://books.zuri.team/design-rules">
+                        Design Books
+                    </a>
+    
+                    <a id="contact" href="contact" >Contact Me</a>
+                </div>
+               
+            </section>
+        
+       
         
     )
 }
@@ -96,7 +114,7 @@ function SocialSection(){
 function Footer(){
     return(
         <footer>
-          
+            <Outlet/>
             <div id="logo">
                 <a href="https://hngi9.zuriboard.com/dashboard">
                     <svg width="188" height="32" viewBox="0 0 188 32" fill="none" xmlns="http://www.w3.org/2000/svg">

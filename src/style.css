@@ -131,7 +131,7 @@ header .header .profile .profile-overlay .camera-icon{
 }
 .links{
     margin: 0;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,6 +154,7 @@ header .header .profile .profile-overlay .camera-icon{
     width: 80%;
     height: 76px;
     border-radius: 9px;
+    cursor:pointer ;
  }
  #link-section a:hover{
     background-color: rgba(204, 204, 204, 0.997);
