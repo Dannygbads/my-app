@@ -187,6 +187,7 @@ textarea:focus{
     box-sizing: content-box;
     border-radius: 10px;
     accent-color: rgb(255, 255, 255);
+    -webkit-appearance: checkbox;
 }
 .checkfield input:checked{
     width: 20px;
