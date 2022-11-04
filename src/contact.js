@@ -119,7 +119,7 @@ function ContactForm(props) {
     }
 
     
-    let name = formValues.lastName+" " +formValues.firstName 
+    let name = "Gbadeyan Daniel"
     return(
         
         <div className="body">
