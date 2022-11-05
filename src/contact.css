@@ -31,10 +31,10 @@
     text-align: left;
     
 }
-h1{
+.hero-txt{
     margin-top: 95px;
 }
-p{
+.sub-txt{
     margin-top: 16px;
     margin-bottom: 48px;
 }
@@ -262,10 +262,10 @@ button:disabled{
         justify-content: left;
         margin: 0;
     }
-    h1{
+    .hero-txt{
         margin-top: 64px;
     }
-    p{
+    .sub-txt{
         margin-top: 16px;
         margin-bottom: 48px;
     }

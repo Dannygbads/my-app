@@ -126,8 +126,8 @@ function ContactForm(props) {
             {/* <pre>{JSON.stringify(formValues, undefined ,2)}</pre> */}
             <div className="form">
                
-                <h1>Contact Me</h1>
-                <p>Hi there,contact me to ask me about anything you have in mind</p>
+                <h1 className="hero-txt">Contact Me</h1>
+                <p className="sub-txt">Hi there,contact me to ask me about anything you have in mind</p>
                 <form onSubmit={handleSubmit}>
 
                     <div className="row">
