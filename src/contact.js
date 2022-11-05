@@ -183,7 +183,7 @@ function ContactForm(props) {
     
                         />
                         <p className="email-txt">This is a hint text to help the user</p>
-                        <span>{formErrors.email}</span>
+                        <span className="email-span">{formErrors.email}</span>
 
                     </div>
 
