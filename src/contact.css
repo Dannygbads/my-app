@@ -312,7 +312,8 @@ button:disabled{
     
     }
     .checkfield input{
-        /* height: 13px;  */
+        width: 40px;
+        height: 22px;
         /* outline:none;
         box-sizing: border-box;
         border-radius: 10px;
@@ -322,7 +323,8 @@ button:disabled{
 
     }
     .checkfield input:checked{
-
+        width: 40px;
+        height: 22px;
         /* width: 26px;
         height: 13px;
         border-radius: 10px;
