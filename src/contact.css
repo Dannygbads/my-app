@@ -47,7 +47,7 @@ span{
     color: #F83F23;
     margin-left: 2px;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 26px;
 }
 
 .field{
@@ -93,13 +93,16 @@ label{
 }
 .email-txt{
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 2px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #475467;
+}
+span{
+    margin-bottom: 26px;
 }
 input{
     margin-top: 0;
@@ -168,9 +171,8 @@ input:active{
 
 }
 textarea{
-    margin-top: 0;
+    margin-top: 26px;
     margin-left: 0;
-    margin-bottom: 26px;
     width: 720px;
     height: 132px;
     border: 1px solid #D0D5DD;
