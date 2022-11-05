@@ -299,10 +299,12 @@ button:disabled{
         height: 13px;
         background-color: white;
         outline:none;
-        box-sizing: content-box;
+        box-sizing: border-box;
         border-radius: 10px;
         scale: 1.3;
         accent-color: rgb(255, 255, 255);
+        -webkit-appearance:checkbox;
+
     }
     .checkfield input:checked{
         width: 26px;
